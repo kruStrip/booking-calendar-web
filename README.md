@@ -1,51 +1,29 @@
-# Calendaric
+# Календарь бронирований
 
-A modern booking calendar application built with React, Vite, and TypeScript.
+Приложение для бронирования: C++ бэкенд на Crow и интерфейс на React + Vite.
 
-## Features
+**Стек:** C++ · Crow · Boost · React · TypeScript · Vite · Tailwind CSS
 
-- Modern UI with Tailwind CSS
-- Mobile-first design
-- Calendar view with time slots
-- Room management
-- Booking management
-- Future integration with AmoCRM
+## Что внутри
 
-## Tech Stack
+- `src/` — бэкенд: контроллеры, модели, работа с БД
+- `src/views/frontend/` — интерфейс: календарь, форма бронирования, компоненты
+- `scripts/` — сборка бэкенда
+- `libs/` — зависимости C++ (Crow подключается как подмодуль)
+- `booking.json` — тестовые данные
 
-- React 18
-- TypeScript
-- Vite
-- Tailwind CSS
-- Radix UI Components
+## Запуск
 
-## Getting Started
+Бэкенд:
 
-1. Install dependencies:
 ```bash
-npm install
+./scripts/make.sh
 ```
 
-2. Start development server:
+Фронтенд:
+
 ```bash
+cd src/views/frontend
+npm install
 npm run start
 ```
-
-3. Build for production:
-```bash
-npm run build
-```
-
-## Project Structure
-
-```
-src/
-  ├── components/     # Reusable UI components
-  ├── screens/       # Page components
-  ├── lib/          # Utility functions
-  └── interf/       # Interface components
-```
-
-## License
-
-MIT
